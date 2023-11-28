@@ -1,0 +1,483 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+/*
+.container {
+    max-width: 100%;
+}*/
+
+/*Header*/
+.custom-logo img {
+    width: 650px;
+    height: 150px;
+}
+
+.header__top {
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    color: #000000;
+}
+
+.lang {
+    text-decoration: none;
+    color: #000000;
+    margin-right: 10px;
+    border-right: 1px solid #000000;
+    padding-right: 10px;
+}
+
+    .lang:last-child {
+        border-right: none;
+    }
+
+/*navbar*/
+.navbar-nav a:hover {
+    background-color: #8b0000; /* Màu đỏ sẫm */
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-padding {
+    padding-top: 70px;
+}
+
+.navbar {
+    background-color: #1c474d !important;
+}
+
+.navbar-nav a {
+    color: white !important;
+    font-weight: bold;
+}
+
+/*main*/
+
+/*Giới thiệu khoa CNTT*/
+.nav-tabs {
+    background-color: #1c474d;
+}
+
+    .nav-tabs .nav-link:hover {
+        background-color: #8b0000; /* Màu đỏ sẫm */
+        transition: all 0.3s;
+        color: white;
+    }
+
+    .nav-tabs .nav-link.active {
+        background-color: #8b0000;
+        transition: all 0.3s;
+        color: white;
+    }
+
+
+.nav-link {
+    color: white;
+}
+
+.introduction-card-body p {
+    text-align: justify;
+    font-size: 2rem;
+}
+
+.introduction-card-body {
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+
+.introduction-card-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.zoom-effect .images {
+    overflow: hidden;
+}
+
+.zoom-effect img {
+    transition: transform 0.3s;
+    max-width: 100%;
+    height: auto;
+}
+
+.zoom-effect:hover img {
+    transform: scale(1.05);
+}
+
+.column {
+    padding: 50px;
+}
+
+    .column h2 {
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+
+    .column p {
+        font-size: 2rem;
+        text-align: justify;
+    }
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.box {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px !important;
+}
+
+    .box::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform-origin: center center;
+        transform: scale(1);
+        transition: transform 0.3s ease;
+    }
+
+.box-1 {
+    background-image: url('https://huongnghiep.hocmai.vn/wp-content/uploads/2022/07/nganh-cong-nghe-thong-tin-hoc-truong-nao-1.jpg');
+}
+
+.box-2 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh3ugVFCUdmIij5SR7Ulxhqanf2ZzotNFM3g&usqp=CAU');
+}
+
+.box-3 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH6W4J6k4Fk7gyy-Zy6zaXecaJNHd3Zz3clg&usqp=CAU');
+}
+
+.box-4 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBF5MCw-26cI5nmoPY09IiggGc1OHpeuYnNA&usqp=CAU');
+}
+
+.box p {
+    position: relative;
+    z-index: 2; /* Đảm bảo văn bản nằm trên lớp phủ và background */
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.box:hover {
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+    .box:hover::before {
+        opacity: 0.7;
+        transition: opacity 0.3s ease;
+    }
+
+.figure {
+    z-index: 2;
+}
+
+.figure-img {
+    border: 1px solid #808080;
+    border-radius: 15px !important;
+    z-index: 1;
+}
+
+.tab-pane .custom-container {
+    font-size: 2rem;
+}
+
+    .tab-pane .custom-container p {
+        font-size: 2rem;
+    }
+
+    .tab-pane .custom-container h2 {
+        font-weight: bold !important;
+        font-size: 2.5rem;
+    }
+
+.figure-caption a {
+    text-align: center;
+    display: block;
+    font-size: 20px;
+}
+
+.figure-caption a {
+    display: block;
+}
+
+.custom-column:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/*tin tức hoạt động*/
+.card-footer:last-child {
+    text-align: center;
+}
+
+.card {
+    max-width: 100%;
+    margin: 10px !important;
+}
+
+    .card div img {
+        border-radius: 10px;
+        border: 1px solid #fff;
+        margin-top: 30px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        width: 70% !important;
+    }
+
+.card-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card-body .card-text {
+    text-align: justify;
+    font-size: 24px;
+}
+
+
+.text-body-secondary {
+    margin-left: 50px;
+    font-size: 24px;
+    display: block;
+}
+
+.custom-container {
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* Tin tức*/
+.block-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.title-block {
+    margin-left: 20px; /* or adjust the margin as needed */
+    color: black;
+    text-decoration: none; /* Remove underline for the link */
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+    .title-block:hover {
+        color: #c80808;
+    }
+
+
+/*Thư viện ảnh*/
+
+.image-library {
+    padding: 30PX;
+}
+
+    .image-library a {
+        text-decoration: none;
+        color: black;
+        margin: 30px;
+        font-weight: bold;
+        font-size: 36px;
+    }
+
+        .image-library a:hover {
+            color: #8b0000;
+            cursor: pointer;
+        }
+
+
+.image-container {
+    margin-right: 30px;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row-1 img {
+    width: 33%;
+    border-radius: 8px;
+    margin: 20px;
+}
+/*footer*/
+.contact-info h5 {
+    font-size: 2rem;
+    color: red;
+    font-weight: bold;
+}
+
+.contact-info p {
+    font-size: 1.5rem;
+}
+
+.contact-info {
+    margin: 30px;
+}
+
+.info-title {
+    color: #333;
+    border: 10px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .custom-logo img {
+        width: 320px !important;
+        height: 70px !important;
+        margin-right: 10px;
+    }
+
+    .lang {
+        border-right: 0;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+        .lang a {
+            display: none;
+        }
+
+    .title-block {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+        .title-block svg {
+            width: 18px;
+        }
+
+
+
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .news-title {
+        font-size: 18px;
+    }
+
+    .news-item p {
+        font-size: 16px;
+    }
+
+    .activity-news {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+    }
+
+        .card-title {
+        font-size: 18px;
+    }
+
+    .card-body .card-text {
+        font-size: 16px;
+    }
+
+    .text-body-secondary {
+        font-size: 16px;
+    }
+
+    .introduction-card-body {
+            padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .introduction-card-title {
+        font-size: 18px;
+    }
+
+    .introduction-card-body p {
+        font-size: 16px;
+    }
+
+    .column {
+        padding: 30px;
+    }
+
+    .tab-pane .custom-container h2 {
+        font-size: 18px;
+    }
+
+    .tab-pane .custom-container p {
+        font-size: 16px;
+    }
+
+
+    .image-library .row-2 img {
+        width: 40% !important;
+    }
+
+    .small-news .news-item-small img {
+        width: 100px !important;
+        height: 70px !important;
+    }
+
+    .image-library .library-title {
+        padding-top: 10px;
+        font-size: 18px;
+    }
+
+    .library-title svg {
+        width: 16px;
+    }
+
+    .small-news .news-info a {
+        font-size: 14px;
+    }
+
+    .small-news .news-info span {
+        font-size: 14px;
+    }
+    .image-library {
+        padding: 0PX;
+    }
+    .contact-info h5 {
+        font-size: 20px;
+    }
+
+    .contact-info p {
+        font-size: 18px;
+    }
+}
